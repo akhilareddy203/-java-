@@ -1,0 +1,35 @@
+merge sorted array
+you are given two integer arr1 and arr2,and sorted in non decreasing order&two integrs m&n, representing the number of elements in arr1 and arr2 respectively.
+merge arr1 and arr2 into a single array sorted in non decreasing order.
+Input:
+6
+0 1 2 3 4 7
+3
+2 5 6
+output:
+0 1 2 2 3 4 5 6 7
+import java.util.*;
+class Merge
+{
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+{
+int n=s.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+for(int i=0;i<n-1;i++)
+{
+	if(a[i]<a[i+1])
+	{
+	System.out.print(a[i]+" ");
+}
+}
+	System.out.print(a[n-1]);
+}
+}
+}
+
